@@ -44,7 +44,7 @@ button {
     font-family: 'Overpass', sans-serif;
     font-weight: 800;
     font-size: 8rem; 
-    color: white;
+    color: #FF0093;
     z-index: 10;
 }
 
@@ -52,32 +52,45 @@ button {
 
 .about {
     display: none;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-wrap: wrap;
     width: 1000px;
     margin: 0 auto;
 }
 
 .about h2  {
+    width: 100%;
     color: white;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 800;
     margin: 10px 0;
+}
+.cp_embed_wrapper {
+    width: 50%;
+}
+.about img {
+    margin-top: 100px;
+    width: 100%;
+}
+img {
+    height: 20px;
+    margin-top: 50px;
 }
 
 .about p {
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     line-height: 1.5;
     letter-spacing: .4rem;
+    width: 50%;
 }
 
 .how {
     height: 100vh;
-    background: #63adf2;
+    background: #002a32;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 100px;
 }
 
 .how h2 {
@@ -88,12 +101,28 @@ button {
 
 .how p {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 0;
 }
 
+.how .content {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.how .content .container{
+     width: 300px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
 .codeAlong {
     height: 110vh;
-    background: #2b2d42;
+    background: #002a32;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -116,7 +145,7 @@ button {
     font-size: 4rem;
     width: 250px;
     line-height: 1;
-    padding-top: 100px;
+    /* padding-top: 100px; */
     padding-left: 30px;
     color: #2b2d42;
 }
@@ -127,7 +156,7 @@ button {
 }
 
 .why p {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
     color: white;
     width: 800px;
@@ -136,39 +165,39 @@ button {
 }
 
 .why p span {
-    font-size: 9rem;
+    font-size: 7rem;
 }
 
 .scene {
-	background: #52b2cf;
+	background: #abd2fa;
 }
 
 .scene path:first-child {
-	fill: #7ec4cf;
+	fill: #abd2fa;
 }
 
 .scene path:nth-child(2) {
-	fill: #9cadce;
+	fill: #7692ff;
 }
 
 .scene path:nth-child(3) {
-	fill: #d1cfe2;
+	fill: #FF0093;
 }
 
 .scene path:nth-child(4) {
-	fill: #d4afb9;
+	fill: #002a32;
 }
 
 .scene path:nth-child(5) {
-	fill: #d1cfe2;
+	fill: #3d518c;
 }
 
 .scene path:nth-child(6) {
-	fill: #9cadce;
+	fill: #7692ff;
 }
 
 .scene path:nth-child(7) {
-	fill: #7ec4cf;
+	fill: #abd2fa;
 }
 
 .overlay {
@@ -180,10 +209,10 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .overlay a {
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
